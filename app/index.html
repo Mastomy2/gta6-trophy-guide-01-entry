@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · 55 Trophies to Platinum</title>
+<meta name="description" content="Offline guide and tracker for all 55 GTA VI PlayStation 5 trophies: cited guides, roadmap to platinum, missable flags, checklist with saved progress.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-text">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Offline guide &amp; tracker</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — each with its official name,
+    description and grade, a guide in our own words with its sources, and a roadmap to the platinum.
+    No online trophies. About 200 hours, difficulty 4/10 (PowerPyx).</p>
+  </div>
+  <div class="plat-card" id="platCard">
+    <div class="plat-ring" id="platRing"><span id="platPct">0%</span></div>
+    <p><strong id="progressText">0 of 55 earned</strong></p>
+    <p class="muted" id="gradeText">0 platinum · 0 gold · 0 silver · 0 bronze</p>
+    <p class="muted">Platinum: <strong>Vice Got a Price!</strong> — unlocks when the other 54 are earned.</p>
+  </div>
+</header>
+
+<section class="alert" id="missableAlert">
+  <h2>⚠ The one trophy you can miss</h2>
+  <p><strong>Positive Mental Attitude</strong> — meditate at Lucia&rsquo;s balcony spot while you are still in
+  <strong>Chapter 1</strong>. There is <strong>no mission replay</strong> and no New Game Plus, so the spot is gone
+  once Chapter 1 ends. Keep a manual save at the start of every chapter. Every other trophy can be earned in
+  free-roam after the story. Source: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap.</p>
+  <button type="button" id="showMissable">Show the missable trophy</button>
+</section>
+
+<nav class="controls" aria-label="Tracker controls">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy name or keyword…" autocomplete="off"></label>
+  <div class="filters" id="kindFilters" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="active">All 55</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="missable">Missable</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+    <button type="button" data-kind="online">Online</button>
+  </div>
+  <label>Grade <select id="gradeFilter">
+    <option value="all">All grades</option>
+    <option value="platinum">Platinum</option>
+    <option value="gold">Gold</option>
+    <option value="silver">Silver</option>
+    <option value="bronze">Bronze</option>
+  </select></label>
+  <label class="spoiler"><input id="spoilerToggle" type="checkbox"> Spoiler-safe: hide story names until earned</label>
+  <div class="io">
+    <button type="button" id="exportBtn">Export progress</button>
+    <label class="importBtn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button type="button" id="resetBtn">Reset</button>
+  </div>
+</nav>
+<p class="statusline" id="statusLine">Showing 55 of 55 trophies.</p>
+
+<section class="roadmap" id="roadmap">
+  <h2>Roadmap to the Platinum <span class="muted">— about 200 hours, 1 playthrough</span></h2>
+  <p class="muted">Built from the official trophy descriptions: story chapters and missions first, then partner and
+  stranger strands, then collectibles, then activities, then the 100% checklist. Full detail per trophy is in its guide below.</p>
+  <ol class="stages" id="stageList"></ol>
+  <h3>Before you start</h3>
+  <ul>
+    <li><strong>No mission replay, no New Game Plus.</strong> Keep a manual save at the start of every chapter and one before the final mission.</li>
+    <li><strong>Cheats disable trophies and saving</strong> — keep them off for the whole run (GTABase).</li>
+    <li><strong>Free-roam stays open after the credits</strong> — everything except the Chapter 1 meditation can wait until after the story.</li>
+    <li><strong>Scan as you go:</strong> WAiNK-scan new vehicles and study animals through the binoculars during the story — that progress counts toward 100% later.</li>
+  </ul>
+</section>
+
+<main>
+  <h2 id="listHeading">Trophy checklist</h2>
+  <p class="muted">Tick a trophy when you earn it — progress is saved in this browser. Open a trophy to read its guide and sources.</p>
+  <div id="trophyList" class="trophy-list"></div>
+  <p class="empty hidden" id="emptyNote">No trophies match these filters. There are no online trophies in the official list — all 55 are earned solo, offline.</p>
+</main>
+
+<footer>
+  <p><strong>Sources.</strong> Trophy names, descriptions and grades: the PlayStation trophy list as published via
+  Exophase / PSNProfiles. Methods, counts and the roadmap: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap
+  (<a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">powerpyx.com</a>), with GTABase
+  where noted. Every guide on this page is written in our own words; sources are named beside each guide, never copied.</p>
+  <p class="muted">Unofficial fan guide. Not affiliated with Rockstar Games, Sony or PlayStation. No Rockstar artwork or logos are used;
+  the look of this page is our own. Works fully offline — it loads only files from this folder.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
